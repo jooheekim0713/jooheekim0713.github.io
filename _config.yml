@@ -34,6 +34,9 @@ url: "https://jooheekim0713.github.io"
 github:
   username: jooheekim0713 # change to your github username
 
+linkedin:
+  usercode: 952a57240
+
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
@@ -44,7 +47,7 @@ social:
     - https://github.com/jooheekim0713 # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/952a57240/
+    - https://www.linkedin.com/in/952a57240
 
 google_site_verification: # fill in to your verification string
 
