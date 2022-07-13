@@ -9,9 +9,9 @@ tags: [Typescript, TS, JS, JavaScript]
 	
 	ApexChart를 적용할때 발생한 오류다.
 	
-	![타입스크립트 no overload matches this call 오류 화면](/assets/img/typescript/no_overload_matches.png)
+	![타입스크립트 no overload matches this call 오류 화면](/assets/img/no_overload_matches.png)
 
-	[참고한 사이트](https://velog.io/@dosilv/TypeScript-React에서-TypeScript-적용하기-오류-해결하기)
+	[참고한 블로그](https://velog.io/@dosilv/TypeScript-React에서-TypeScript-적용하기-오류-해결하기)
 	
 	
 	간단하게 말하면 overloaded function에서 지정한 매개변수들의 타입 형식(여기서는 [number, number] 또는 [string, string])과 실제 전달한 인자의 타입 형식이 일치하지 않으면 뜨는 에러이다.
