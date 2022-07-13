@@ -23,10 +23,10 @@ timezone: Asia/Seoul
 
 title: joohee Kim # the main title
 
-tagline: software engineer upload posting about what i learn # it will display as the sub-title
+tagline: software engineer upload posting what i learned # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  upload what i learned. usually javascript, git.
+  upload what i learned. usually javascript, typescript and others.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://jooheekim0713.github.io"
