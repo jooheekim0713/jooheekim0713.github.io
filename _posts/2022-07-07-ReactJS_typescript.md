@@ -2,7 +2,7 @@
 title: "[React] React typescript"
 date: 2022-07-07 09:00:00 +/0900
 categories: [React]
-tags: [React, React JS, JS, JavaScript, TS, TypeScript]    
+tags: [React, React JS, JS, Javascript, TS, Typescript]    
 ---
 
 	npm install --save typescript @types/node @types/react @types/react-dom @types/jest

@@ -2,7 +2,7 @@
 title: "[Typescript] 오류 수정"
 date: 2022-07-08 15:43:00 +/0900
 categories: [Typescript]
-tags: [Typescript, TS, JS, JavaScript]    
+tags: [Typescript, TS, JS, Javascript]    
 ---
 
 1. No overload matches this call

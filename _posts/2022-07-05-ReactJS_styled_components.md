@@ -1,8 +1,8 @@
 ---
-title: "[React] React JS styled-components"
+title: "[React] styled-components"
 date: 2022-07-05 13:53:00 +/0900
 categories: [React]
-tags: [React, React JS, JS, JavaScript]    
+tags: [React, React JS, JS, Javascript]    
 ---
 
  퇴사하기 전에 React 강의를 일단 듣고 따라 치면서 공부했던 기억이 있는데 한동안 취준, 이력서 작성에만 집중하다보니 다 잊어버렸다.<br>
