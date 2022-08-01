@@ -77,7 +77,7 @@ const { onChange, onBlur, name, ref } = register('firstName');
 ### formState 사용 예시
 
 - 전체 form state에 대한 정보를 갖고있는 객체. 사용자와 form의 interaction을 확인할 수 있다.
-- fromState의 errors는 form의 required, pattern에 맞지 않는input이 제출됐을 경우 오류가 뜬 input box를 error message와 함께 보여주는 객체다.
+- fromState의 errors는 form의 required, pattern에 맞지 않는input이 제출됐을 경우 오류가 뜬 input box와 error message를 함께 보여주는 객체다.
 
 ```javascript
 function ToDoList() {
