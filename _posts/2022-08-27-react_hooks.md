@@ -22,6 +22,7 @@ tags: [React, memo, useRef, useHistory]
 - 최신버전인 react-router ver.6 는 useHistory()를 더이상 지원하지 않는다. 따라서 useNavigate()를 사용해보려고 했으나 공식 사이트 useNavigate 항목에 404가 떠서 급 방향을 틀었다. 공식 문서에 404가 뜨는데 섵부르게 사용할 순 없다는 생각이 들었다.
 - 2022-08-28 현재는 docs는 여전히 404, hooks 분류에는 정보가 업데이트 되어있다. [React-router useNavigate() 공식 문서](https://reactrouter.com/en/main/hooks/use-navigate)
   - 공식 문서를 보면 이렇게 사용한다. useHistory()와 마찬가지로 첫 arg는 이동하는주소를 입력받고 두번째 arg는 선택입력사항으로 replace 또는 state를 이동하는 주소에 보낼 수 있다.
+  - <code> { replace: true } </code>를 사용한다면 페이지가 이동된 후 뒤로가기를 하더라도 기존 페이지로 넘어오지 않고 메인 페이지('/')로 돌아간다. <code>{ replace: false }</code> 인 경우 뒤로가기가 가능하며 replace 속성을 명시하지 않으면 false가 기본값이다.
 
 ```javascript
 import { useNavigate } from "react-router-dom";
