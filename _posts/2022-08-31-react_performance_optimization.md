@@ -8,7 +8,7 @@ tags: [React, PureComponent, memo]
 ## React Virtual DOM
 
 - React는 Component에 관련된 state, props이 변경되는 경우 랜더가 호출된다. state, prop이 변경되면 메모리상에 존재하는 Virtual DOM tree에 이전의 prop과 state로 구현된 tree와 새로 구현된 tree를 비교해서 변경된 부분만 DOM에 업데이트한다.
-- 문제는 변경되지 않은 Component도 랜더링되기도 하는데 이는 변경사항 없는 요소를 다시 읽어오는 것은 메모리를 낭비하며 성능을 저하시킨다. 따라서 이런 변경이 필요하지 않은 Component들의 랜더링을 막기 위한 성능 최적화가 필요하다.
+- 문제는 변경되지 않은 Component도 랜더링되기도 하는데 변경사항 없는 요소를 다시 읽어오는 것은 메모리를 낭비하며 성능을 저하시킨다. 따라서 이런 변경이 필요하지 않은 Component들의 랜더링을 막기 위한 성능 최적화가 필요하다.
 
 ## React 성능 최적화
 
