@@ -1,24 +1,35 @@
 ---
-title: "[React] memo, useRef, useHistory"
+title: "[React] useRef, useHistory"
 date: 2022-08-22 15:15:00 +/0900
 categories: [React]
-tags: [React, memo, useRef, useHistory]
+tags: [React, useRef, useHistory]
 ---
 
-## [React memo](https://ko.reactjs.org/docs/react-api.html#reactmemo)
+## [useRef](https://ko.reactjs.org/docs/hooks-reference.html#useref)
 
-- 컴포넌트가 동일한 props로 동일한 결과를 렌더링한다면 React.memo를 호출하고 결과를 메모이징하도록 래핑해 결우에 따라 성능 향상을 누릴 수 있다. 마지막으로 랜더링된 결과를 재사용한다. 쓸데없는 랜더링을 줄여준다는 뜻. useState, useReducer, useContext 등의 훅을 사용해 props가 변할 때마다 랜더링을 하는데 (같은 props로 랜더링 될 때) 랜더링이 필요가 없는 component의 랜더링을 방지하기 위해 사용한다.
-- 공식문서에는 오직 성능 최적화를 위해 사용되기 때문에 랜더링을 방지하기 위해 사용하지 말라는 경고 메시지가 있다. 랜더링을 막기 위해 무분별하게 사용하지 말라는 의미 같다.
-- memo 를 사용해야할 때는 [Use React.memo() wisely](https://dmitripavlutin.com/use-react-memo-wisely/)
-  - 컴포넌트가 같은 값이 주어지면 항상 같은 결과가 나올 때
-  - 컴포넌트 랜더링이 자주 될 때
-  - 항상 같은 props로 랜더링 될 때
-  - 컴포넌트가 커서 랜더링시 시간이 오래 걸릴 때
+- 함수형 컴포넌트에서 ref를 사용할 때는 useRef hook을 사용한다.(클래스형 컴포넌트에서는 React.createRef를 사용한다.)
+- useRef()를 사용하여 Ref 객체를 만들고, 선택하고 싶은 DOM 에 ref 값으로 설정한다. Ref 객체의 .current 프로퍼티는 선택한 DOM 의 값을 뜻한다.
+- useRef는 내용이 변경될 때 변경된 값을 알려주지 않기때문에 React가 DOM 노드에 ref를 attach하거나 detach할 때 어떤 코드를 실행하고 싶다면 대신 콜백 ref를 사용해야한다.
 
-## React useRef
+```javascript
+function TextInputWithFocusButton() {
+  const inputEl = useRef(null);
+  const onButtonClick = () => {
+    // `current` points to the mounted text input element
+    inputEl.current.focus();
+  };
+  return (
+    <>
+      <input ref={inputEl} type="text" />
+      <button onClick={onButtonClick}>Focus the input</button>
+    </>
+  );
+}
+```
 
 ## [useHistory](https://v5.reactrouter.com/web/api/Hooks/usehistory)
 
+- react의 hook이 아닌 react-router-dom hook이다.
 - 최신버전인 react-router ver.6 는 useHistory()를 더이상 지원하지 않는다. 따라서 useNavigate()를 사용해보려고 했으나 공식 사이트 useNavigate 항목에 404가 떠서 급 방향을 틀었다. 공식 문서에 404가 뜨는데 섵부르게 사용할 순 없다는 생각이 들었다.
 - 2022-08-28 현재는 docs는 여전히 404, hooks 분류에는 정보가 업데이트 되어있다. [React-router useNavigate() 공식 문서](https://reactrouter.com/en/main/hooks/use-navigate)
   - 공식 문서를 보면 이렇게 사용한다. useHistory()와 마찬가지로 첫 arg는 이동하는주소를 입력받고 두번째 arg는 선택입력사항으로 replace 또는 state를 이동하는 주소에 보낼 수 있다.
