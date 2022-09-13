@@ -1,5 +1,5 @@
 ---
-title: "[Typescript] "
+title: "[Typescript] 타입스크립트 도입 시작"
 date: 2022-09-13 16:56:00 +/0900
 categories: [Typescript]
 tags: [Typescript]
